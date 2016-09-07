@@ -2649,7 +2649,7 @@ angular.module('ui.bootstrap.modal', [])
         //move focus to specified element if available, or else to body
         if (elementToReceiveFocus && elementToReceiveFocus.focus) {
           elementToReceiveFocus.focus();
-        } else {
+        } else if (body.focus) {
           body.focus();
         }
       }
